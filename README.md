@@ -35,12 +35,15 @@ TrabajoETS/
 ```bash
 cd backend
 npm install
+npm install dotenv
 ```
 
 Crear archivo `.env` con:
 - SUPABASE_URL
 - SUPABASE_SERVICE_KEY
 - JWT_SECRET
+Crear base de datos en https://supabase.com/ para poder obtener las variables de entorno, ejecutando el script de la carpeta /database
+
 
 ```bash
 npm run dev
