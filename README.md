@@ -50,4 +50,4 @@ Crear base de datos en https://supabase.com/ para poder obtener las variables de
 npm run dev
 ```
 
-Abre http://localhost:4000 en el navegador.
+Abre http://localhost:4000/ en el navegador.
