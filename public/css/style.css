@@ -1,0 +1,348 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', system-ui, sans-serif;
+  background: #f8f9fa;
+  color: #333;
+  line-height: 1.5;
+  min-height: 100vh;
+}
+
+.auth-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 20px;
+  background: linear-gradient(135deg, #1a5f2a 0%, #2d8a3e 100%);
+}
+
+.auth-card {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+  width: 100%;
+  max-width: 340px;
+}
+
+.auth-card h1 {
+  text-align: center;
+  color: #1a5f2a;
+  font-size: 1.5rem;
+  margin-bottom: 8px;
+}
+
+.auth-card .subtitle {
+  text-align: center;
+  color: #666;
+  font-size: 0.9rem;
+  margin-bottom: 24px;
+}
+
+.auth-card label {
+  display: block;
+  margin-bottom: 6px;
+  color: #444;
+  font-weight: 500;
+}
+
+.auth-card input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.auth-card button {
+  width: 100%;
+  padding: 14px;
+  background: #1a5f2a;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.auth-card button:hover {
+  background: #154a22;
+}
+
+.auth-card a {
+  display: block;
+  text-align: center;
+  margin-top: 16px;
+  color: #1a5f2a;
+  text-decoration: none;
+}
+
+.auth-card a:hover {
+  text-decoration: underline;
+}
+
+nav {
+  background: #1a5f2a;
+  padding: 12px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav .logo {
+  color: white;
+  font-weight: 700;
+  font-size: 1.1rem;
+  text-decoration: none;
+}
+
+nav .nav-links {
+  display: flex;
+  gap: 16px;
+}
+
+nav .nav-links a {
+  color: rgba(255,255,255,0.9);
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+nav .nav-links a:hover {
+  color: white;
+}
+
+main {
+  max-width: 480px;
+  margin: 0 auto;
+  padding: 24px 20px;
+}
+
+main h1 {
+  font-size: 1.4rem;
+  color: #1a5f2a;
+  margin-bottom: 8px;
+}
+
+main .intro {
+  color: #666;
+  margin-bottom: 24px;
+  font-size: 0.95rem;
+}
+
+ul {
+  list-style: none;
+}
+
+main ul li {
+  background: white;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+}
+
+main ul li a {
+  display: block;
+  padding: 16px 20px;
+  color: #333;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+main ul li a:hover {
+  background: #f5f5f5;
+  border-radius: 10px;
+}
+
+main ul li.empty {
+  padding: 20px;
+  text-align: center;
+  color: #888;
+}
+
+main ul li.empty a {
+  color: #1a5f2a;
+  padding: 0;
+}
+
+.categoria {
+  margin-bottom: 24px;
+}
+
+.categoria h2 {
+  font-size: 1rem;
+  color: #1a5f2a;
+  margin-bottom: 12px;
+  padding-left: 4px;
+}
+
+.menu-item {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  padding: 14px 16px;
+}
+
+.menu-item .nombre {
+  flex: 1;
+  font-weight: 500;
+}
+
+.menu-item .precio {
+  color: #1a5f2a;
+  font-weight: 600;
+}
+
+.menu-item button {
+  padding: 8px 16px;
+  background: #1a5f2a;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.menu-item button:hover {
+  background: #154a22;
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 16px;
+  background: white;
+  margin-bottom: 8px;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+}
+
+.cart-item span:first-child {
+  flex: 1;
+}
+
+.cart-item button {
+  padding: 6px 12px;
+  background: #dc3545;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.85rem;
+}
+
+#cartSummary {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 20px 0;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+}
+
+#cartSummary p {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.payment-section {
+  margin-bottom: 20px;
+}
+
+.payment-section p {
+  margin-bottom: 12px;
+  font-weight: 500;
+}
+
+#paymentMethods label {
+  display: block;
+  padding: 12px;
+  background: white;
+  margin-bottom: 8px;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+  cursor: pointer;
+}
+
+#paymentMethods input {
+  margin-right: 10px;
+}
+
+#walletBalance {
+  background: white;
+  padding: 28px;
+  border-radius: 12px;
+  text-align: center;
+  margin-bottom: 24px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+}
+
+#walletBalance .amount {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1a5f2a;
+}
+
+.order-item {
+  padding: 16px 20px;
+}
+
+.order-item .order-id {
+  font-weight: 600;
+  display: block;
+}
+
+.order-item .order-status {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.btn {
+  display: block;
+  width: 100%;
+  padding: 16px;
+  background: #1a5f2a;
+  color: white;
+  text-align: center;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: #154a22;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.error {
+  position: fixed;
+  bottom: 24px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #dc3545;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 380px) {
+  nav {
+    flex-direction: column;
+    gap: 10px;
+  }
+}

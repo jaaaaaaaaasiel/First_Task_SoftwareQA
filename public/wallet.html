@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Monedero - The Fast Food Salle</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <nav>
+    <a href="home.html" class="logo">The Fast Food Salle</a>
+    <div class="nav-links">
+      <a href="home.html">Inicio</a>
+      <a href="orders.html">Mis pedidos</a>
+      <a href="login.html" id="logout">Salir</a>
+    </div>
+  </nav>
+  <main>
+    <h1>Monedero Digital</h1>
+    <p class="intro">Tu saldo acumulado para pagar en la aplicación.</p>
+    <div id="walletBalance">
+      <p>Saldo acumulado</p>
+      <p class="amount">$<span id="walletAmount">0.00</span></p>
+    </div>
+    <button id="addBalance" class="btn">Agregar saldo</button>
+  </main>
+  <p id="errorMsg" class="error hidden"></p>
+  <script src="js/api.js"></script>
+  <script src="js/wallet.js"></script>
+</body>
+</html>

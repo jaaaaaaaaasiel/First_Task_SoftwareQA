@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carrito - The Fast Food Salle</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <nav>
+    <a href="home.html" class="logo">The Fast Food Salle</a>
+    <div class="nav-links">
+      <a href="orders.html">Mis pedidos</a>
+      <a href="wallet.html">Monedero</a>
+      <a href="login.html" id="logout">Salir</a>
+    </div>
+  </nav>
+  <main>
+    <h1>Tu pedido</h1>
+    <p class="intro">Revisa el resumen antes de confirmar.</p>
+    <div id="cartItems"></div>
+    <div id="cartSummary">
+      <p>Costo total: $<span id="cartTotal">0.00</span></p>
+    </div>
+    <div class="payment-section">
+      <p>Método de pago</p>
+      <div id="paymentMethods">
+        <label><input type="radio" name="payment" value="efectivo" checked> Efectivo</label>
+        <label><input type="radio" name="payment" value="tarjeta"> Tarjeta</label>
+        <label><input type="radio" name="payment" value="wallet"> Monedero Digital</label>
+      </div>
+    </div>
+    <button id="confirmOrder" class="btn">Confirmar y recoger en ventanilla</button>
+  </main>
+  <p id="errorMsg" class="error hidden"></p>
+  <script src="js/api.js"></script>
+  <script src="js/cart.js"></script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Iniciar sesión - The Fast Food Salle</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="auth-page">
+  <div class="auth-card">
+    <h1>The Fast Food Salle</h1>
+    <p class="subtitle">Inicia sesión con tu matrícula y contraseña</p>
+    <form id="loginForm">
+      <label>Matrícula</label>
+      <input type="text" id="loginMatricula" placeholder="Tu matrícula" required>
+      <label>Contraseña</label>
+      <input type="password" id="loginPassword" placeholder="Tu contraseña" required>
+      <button type="submit">Iniciar sesión</button>
+    </form>
+    <a href="register.html">Crear cuenta</a>
+  </div>
+  <p id="errorMsg" class="error hidden"></p>
+  <script src="js/api.js"></script>
+  <script src="js/login.js"></script>
+</body>
+</html>
